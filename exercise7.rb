@@ -38,7 +38,9 @@ students.delete(:cohort2)
 def total(hash)
   sum = 0
   hash.each do |x, y|
-    sum + y
+    sum += y
   end
   puts sum
 end
+
+total(students)
